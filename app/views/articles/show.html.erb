@@ -1,0 +1,14 @@
+<% edit_icon = '<i class="far fa-edit"></i>'.html_safe %>
+<% trash_icon = '<i class="fas fa-trash-alt"></i>'.html_safe %>
+
+<div class="container">
+  <div class="d-flex align-items-center">
+    <h3><%= @article.title %></h3>
+    <%= link_to edit_icon, edit_article_path(@article) %>
+    <%= link_to trash_icon, article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title}?" } %>
+  </div>
+  <hr>
+  <div>
+    <p><%= @article.content %></p>
+  </div>
+</div>
