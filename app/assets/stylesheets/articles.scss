@@ -4,6 +4,12 @@
 
 .btn {
   margin-top: 20px;
+  border-color: #2fa78d !important;
+  background-color: #2fa78d !important;
+  &:hover {
+    border-color: #207461 !important;
+    background-color: #207461 !important;
+  }
 }
 
 .form-control {
@@ -12,6 +18,12 @@
 
 a {
   text-decoration: none !important;
+  color: #2fa78d !important;
+  opacity: 0.6;
+  &:hover {
+    text-decoration: underline !important;
+    opacity: 1;
+  }
 }
 
 // #details-article {
@@ -29,8 +41,19 @@ a {
 .header {
   background-color: #f2f2f2;
   padding: 10px;
+  border-bottom: 2px solid #b9b9b9;
+}
+
+.header a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  &:hover {
+    color: #333333 !important;
+  }
 }
 
 i {
   margin-left: 10px;
+  font-size: 30px;
 }
